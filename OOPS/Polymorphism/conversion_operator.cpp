@@ -11,6 +11,10 @@ public:
     operator float() {
         return float(num) / float(den);
     }
+
+    operator double() {
+        return (double(num) * double(den)) / (double(num) + double(den));
+    }
 };
 
 int main() {
@@ -18,6 +22,9 @@ int main() {
     float val = c1;
 
     cout << val;
+
+    double value = c1;
+    cout << " " << value;
     
     return 0;
 }

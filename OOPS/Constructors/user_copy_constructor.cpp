@@ -7,7 +7,7 @@ class A {
 public:
     A(int data, string name) : data(data), name(name) {};
 
-    A (const A &obj) {
+    A (const A &obj) { // we cannot change the value of object as it is constant
         data = obj.data;
         name = "Shreya";
     }

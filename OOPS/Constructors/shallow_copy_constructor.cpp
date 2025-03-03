@@ -29,7 +29,7 @@ int main() {
     Node node1(4, "Ankit", node -> next);
 
     node -> next = nullptr;
-    Node node2(node1);
+    Node node2(node1); // both will have reference pointing to the same node
 
     node1.showNode(); node2.showNode();
     return 0;
